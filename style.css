@@ -1,4 +1,44 @@
-body {background-color:tan;}
-h1{color:green;}
+body{
+	background: rgb(255,255,255);
+	font-size: 150%;
+	font-family: "Time New Roman", Arial;
+}
 
+h1{
+	color: rgb(128,128,128);
+	font-size: 150%;
+	text-align: center;
 
+}
+
+section{
+	margin: auto;
+	width: 300px;
+	/*border: 1px solid red;*/
+	padding: 10px;
+	
+}
+
+section p{
+	font-size: 70%;
+	font-family: "Time New Roman", Arial;
+	padding: 5px;
+	margin: 0px;
+}
+
+section input{
+	float: right;
+}
+
+section button{
+	background: rgb(239,239,239);
+	border-radius: 5px 5px 5px 5px;
+
+}
+
+footer{
+	width: 450px;
+	margin: auto;
+	font-size: 80%;
+	font-family: "Time New Roman", Arial;
+}
