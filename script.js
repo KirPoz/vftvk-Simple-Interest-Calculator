@@ -3,19 +3,24 @@ function compute()
 {
     date = new Date();
 
-    amount = document.getElementById("principal").value;
-    rate = document.getElementById("rate").value;
-    years = document.getElementById("years").value;
+    amount = document.getElementById("principal");
+    rate = document.getElementById("rate");
+    years = document.getElementById("years");
 
+    if(amount.value <= 0){
+    	alert("Please enter a positive number");
+    	amount.focus();
+    	return false;
+    }
 
-    sum = (amount * (rate/100) * years);
+    sum = (amount.value * (rate.value/100) * years.value);
 
     currentYear = date.getFullYear();
-    year = Number(currentYear) + Number(years);
+    year = Number(currentYear) + Number(years.value);
 
     jsVar = 
-        '<p> If you deposit: ' + amount + '</p>' +
-        '<p> at an interest rate of: ' + rate + '% </p>' +
+        '<p> If you deposit: ' + amount.value + '</p>' +
+        '<p> at an interest rate of: ' + rate.value + '% </p>' +
         '<p> You will receive an amount of: ' + sum.toFixed(2) + '</p>' +
         '<p> in the year: ' + year + '</p>';
 
