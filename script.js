@@ -7,7 +7,8 @@ function compute()
     rate = document.getElementById("rate").value;
     years = document.getElementById("years").value;
 
-    sum = (amount * (1+rate/100)**years) - amount;
+
+    sum = (amount * (rate/100) * years);
 
     currentYear = date.getFullYear();
     year = Number(currentYear) + Number(years);
@@ -28,4 +29,17 @@ function range() {
 	var rng=document.getElementById('rate'); //rng - это Input
 	var p=document.getElementById('rate_now'); // p - абзац
 	p.innerHTML=rng.value + '%';
+}
+
+function checkdata(){
+    amount = document.getElementById("principal");
+
+
+    if(amount.value <= 0){
+    	alert("Please enter a positive number");
+    	amount.focus();
+    	return false;
+    }
+
+    return true;
 }
