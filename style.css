@@ -13,7 +13,7 @@ h1{
 
 section{
 	margin: auto;
-	width: 300px;
+	width: 400px;
 	/*border: 1px solid red;*/
 	padding: 10px;
 	
@@ -28,11 +28,17 @@ section p{
 
 section input{
 	float: right;
+	width: 250px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+section select{
+	float: right;
 }
 
 section button{
 	background: rgb(239,239,239);
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 3px 3px 3px 3px;
 
 }
 
